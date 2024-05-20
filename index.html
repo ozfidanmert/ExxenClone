@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="./img/exxen-seeklogo.com.svg" type="image/x-icon">
+
+    <style>
+        .container-style {
+            width: 65%;
+            margin: auto;
+        }
+
+
+        .btn-dark:hover {
+            background-color: black;
+        }
+
+        input::placeholder {
+            /* inputların placehoder'a işlem yapar */
+            color: black;
+            font-weight: bold;
+        }
+
+        .alt-nav {
+            background-color: #111111;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar w-100 bg-warning">
+        <!-- p-0 p-1 p-2 p-3 p-4 p-5 olara kullanılır paddingtir-->
+        <div class="container p-3 d-flex flex-column flex-lg-row justify-content-between align-items-center">
+
+            <div class="logo mb-3">
+                <!-- w-25 w-50 w-100  =>  % olarak agılanır sadece bunlar çalışır -->
+                <img src="./img/logo-web.svg" class="w-100" alt="">
+                <!-- w-100 yaptığımızda görselin width değerini 100% yapar -->
+            </div>
+
+            <div class="butonlar d-flex flex-column flex-md-row gap-4">
+
+                <a class="btn bg-black text-warning rounded-0 fw-bold" href="">EXXENSPOR Ticari Üye Ol</a>
+
+                <!-- rounded-0 ile border radius sıfırlarız veya düzenleriz-->
+                <a class="btn btn-light bg-transparent border border-dark rounded-0 fw-bold" href="">Üye Girişi</a>
+
+                <div class="option d-flex justify-content-center align-items-center gap-2">
+                    <i class="fa-solid fa-globe fa-lg"></i>
+
+                    <select name="" id="" class="bg-transparent py-2 border-0 fw-bold">
+                        <option value="">TR</option>
+                        <option value="">EN</option>
+                    </select>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <div class="alt-nav p-2 top-0">
+        <div class="container-style d-flex flex-column flex-lg-row justify-content-between gap-4 pt-3">
+            <!--
+            flex-grow-1 : her bir öğenin eşit genişlikte olmasını sağlar
+            flex-md-row : md boyutuna ulaştığında veya daha büyükse öğrelerin yataydan yan yana geçmesini sağlar-->
+
+            <div class="flex-grow-1 mb-3">
+                <input class="w-100 p-2" type="text" placeholder="Ad Soyad">
+            </div>
+            <div class="flex-grow-1 mb-3">
+                <input class="w-100 p-2" type="text" placeholder="E-posta Adresi">
+            </div>
+            <div class="flex-grow-1 d-flex mb-2">
+                <button class="btn btn-warning rounded-0 w-100 fw-bold">Üye Ol</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+
+
+    <main class="bg-black p-4">
+        <div class="container">
+
+            <div class="foto">
+                <img src="./img/14gun.webp" class="w-100" alt="">
+            </div>
+
+            <!-- mt-3 => margin top-->
+            <div class="row mt-5">
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-3">
+                    <!-- lg'a kadar 3 birim small'da 6 birim sonrasında 12 birimlik yer kaplar -->
+
+                    <a href="" class="text-decoration-none">
+                        <div class="foto">
+                            <img src="./img/card1.webp" class="w-100" alt="">
+                        </div>
+                        <p class="text-white text-center fs-5 fw-bold">Survior</p>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12">
+
+                    <a href="" class="text-decoration-none">
+                        <div class="foto">
+                            <img src="./img/card2.webp" class="w-100" alt="">
+                        </div>
+                        <p class="text-white text-center fs-5 fw-bold">Şampiyonlar Ligi</p>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-3">
+
+                    <a href="" class="text-decoration-none">
+                        <div class="foto">
+                            <img src="./img/card3.webp" class="w-100" alt="">
+                        </div>
+                        <p class="text-white text-center fs-5 fw-bold">Avrupa Ligi</p>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-3">
+
+                    <a href="" class="text-decoration-none">
+                        <div class="foto">
+                            <img src="./img/card4.webp" class="w-100" alt="">
+                        </div>
+                        <p class="text-white text-center fs-5 fw-bold">Konferans Ligi</p>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-3">
+
+                    <a href="" class="text-decoration-none">
+                        <div class="foto">
+                            <img src="./img/card5.webp" class="w-100" alt="">
+                        </div>
+                        <p class="text-white text-center fs-5 fw-bold">Aşk Kumardır</p>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-3">
+
+                    <a href="" class="text-decoration-none">
+                        <div class="foto">
+                            <img src="./img/card6.webp" class="w-100" alt="">
+                        </div>
+                        <p class="text-white text-center fs-5 fw-bold">Leyla ile Mecnun</p>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-3">
+
+                    <a href="" class="text-decoration-none">
+                        <div class="foto">
+                            <img src="./img/card7.webp" class="w-100" alt="">
+                        </div>
+                        <p class="text-white text-center fs-5 fw-bold">Gibi</p>
+                    </a>
+
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 mb-3">
+
+                    <a href="" class="text-decoration-none">
+                        <div class="foto">
+                            <img src="./img/card8.webp" class="w-100" alt="">
+                        </div>
+                        <p class="text-white text-center fs-5 fw-bold">Leyla ile Mecnun</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-black p-4">
+        <div class="container-style d-flex flex-column justify-content-center align-items-center mt-4">
+
+            <div class="foto">
+                <img src="./img/ekranlar.svg" alt="">
+            </div>
+
+            <div class="yazi mt-5 w-75">
+                <p class="text-white fs-3 text-center">Hemen üye ol, cepte, tablette, bilgisayarda, istediğin zaman,
+                    istediğin yerde exxen.com, Google Play, AppGallery, App Store, Apple TV ve Android TV'den izlemeye
+                    başla.</p>
+            </div>
+
+            <div class="appler d-flex justify-content-center align-items-center mt-3 gap-3">
+                <img src="./img/app-store-2.svg" class="w-25" alt="">
+                <img src="./img/google-play@3x.png" class="w-25" alt="">
+                <img src="./img/huawei-app-gallery@3x.png" class="w-25" alt="">
+            </div>
+
+            <div class="son-foto mt-5">
+                <img src="./img/exxen-seeklogo.com.svg" class="w-100" alt="">
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/f478418874.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
